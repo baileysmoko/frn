@@ -27,6 +27,8 @@ function Cards() {
           </ul>
         </div>
         <hr className='separator' />
+        <h1 className='highlight'>Since our founding in 2012, Food Recovery Network at Brown has recovered over 120,000 pounds of food! We currently recover from the Blue Room, Ivy Room, Brown RISD Hillel, ERC  Café, and Brown Market Shares.</h1>
+        <hr className='separator' />
         <h1 className='hlight'>ARTICLES ABOUT FRN@BROWN</h1>
       <div className='cards__container'>
         <div className='cards__wrapper'>
@@ -54,6 +56,8 @@ function Cards() {
           </ul>
         </div>
       </div>
+      <hr className='separator' />
+      <h1 className='hlight'>OUR COMMUNITY PARTNERS</h1>
     </div>
   );
 }
