@@ -16,7 +16,6 @@ function About() {
     { name: "Emma Weech", introduction: "I’m a junior at Brown, concentrating in Environmental Studies and International and Public Affairs! My hometown is Nassau, Bahamas and I’ve been on the FRN E-Board since the spring term of my first year. Since joining FRN, I have enjoyed collaborating with and learning from various community members and organizations who are working to combat food insecurity in Providence and beyond.", image: emma },
     { name: "Seth Peiris", introduction: "I’m a sophomore at Brown from Maplewood, NJ, studying Applied Math-Economics and History! Coming to a college campus, I realized that the sheer amount of nutritious food discarded each day had so much potential to help our local communities fight food insecurity. Besides the work I do for FRN, I love to sing and hike!", image: seth },
     { name: "Alex Zeng", introduction: "I’m a junior at Brown from Dallas, Texas, studying biochemistry and archaeology.", image: alex },
-    { name: "Suzie Zhang", introduction: "Greetings! I'm David, a music lover and amateur chef.", image: suzie },
     { name: "David Veloso", introduction: "I’m a sophomore at Brown from Baltimore, Maryland, studying Mechanical Engineering. This is my first semester on FRN E-board!  Through FRN, I’ve learned so much about food insecurity around Providence and how much impact one shift can have on the community.  Outside of FRN, I love running and watching anime and basketball.", image: david },
     { name: "Athena Deng", introduction: "I’m a first-year at Brown (currently) concentrating in Computer Science and Cognitive Neuroscience! I’m from the Chicago suburbs and this is my first semester on FRN e-board.", image: athena },
     { name: "Ran Zhao", introduction: "I’m a freshman at Brown from Hong Kong studying comparative literature! This is my first semester on FRN E-board, and it’s been so wonderful both seeing the amount of food we’re able to rescue and interacting with community partners to learn about their approaches to tackling food insecurity. Outside of FRN, I love drawing and thinking about frogs.", image: ran },
@@ -25,10 +24,10 @@ function About() {
   ];
 
   return (
-    <div style={{ backgroundColor: "#f0f0f0", position: "relative" }}>
+    <div style={{ backgroundColor: 'white', position: "relative" }}>
       <div style={{ overflow: "hidden" }}>
         <img src={team} alt="Team Photo" style={{ width: "100%", height: "auto", objectFit: "cover", objectPosition: "50% 25%", filter: "brightness(0.8)" }} /> {/* Team photo at the top */}
-        <h1 style={{ position: "absolute", top: "9%", left: "50%", transform: "translate(-50%, -50%)", color: "white", fontSize: "60px" }}>WHO WE ARE</h1>
+        <h1 style={{ fontFamily: "'Abel', sans-serif", position: "absolute", top: "9%", left: "50%", transform: "translate(-50%, -50%)", color: "white", fontSize: "60px" }}>OUR TEAM</h1>
       </div>
       <div style={{ display: "flex", justifyContent: "left" }}>
         <div style={{ maxWidth: "800px", marginLeft: "200px" }}>

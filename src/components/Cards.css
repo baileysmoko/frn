@@ -11,7 +11,7 @@ h1 {
   display: flex;
   flex-flow: column;
   align-items: center;
-  max-width: 1120px;
+  max-width: 1053px;
   width: 90%;
   margin: 0 auto;
 }
@@ -63,6 +63,7 @@ h1 {
   margin-left: 10px;
   padding: 6px 8px;
   max-width: calc((100%) - 60px);
+  font-family: 'Abel', sans-serif !important;
   font-size: 12px;
   font-weight: 700;
   color: #fff;
@@ -94,6 +95,7 @@ h1 {
 }
 
 .cards__item__text {
+  font-family: 'Abel', sans-serif !important;
   color: #252e48;
   font-size: 18px;
   line-height: 24px;
@@ -155,14 +157,14 @@ h1 {
   max-width: 800px; /* Adjust maximum width as needed */
   padding: 0 20px; /* Optional: Add padding to the description */
   margin-right: 100px;
-  margin-top: -35px;
+  margin-top: -2px;
 }
 .apple-image {
   float: right;
   margin-right: 73px;
   max-width: 370px; /* Adjust the width of the apple image */
   height: auto; /* Maintain aspect ratio */
-  margin-top: -17px;
+  margin-top: 0px;
 }
 
 @media only screen and (min-width: 1024px) {
@@ -178,5 +180,6 @@ h1 {
   font-family: 'Abel', sans-serif;
   text-align: center; /* Adjust text alignment as needed */
   margin-top: 40px;
+  margin-bottom: -40px;
   font-size: 30px;
 }

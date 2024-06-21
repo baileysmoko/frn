@@ -37,19 +37,6 @@ function Navbar() {
               <Link to='/about' className='nav-links' onClick={closeMobileMenu}>
                 About
               </Link>
-              <ul className='dropdown-menu'>
-                <li>
-                  <Link to='/about/team' className='dropdown-link' onClick={closeMobileMenu}>
-                    Who We Are
-                  </Link>
-                </li>
-                <li>
-                  <Link to='/Purpose' className='dropdown-link' onClick={closeMobileMenu}>
-                    What We Do
-                  </Link>
-                </li>
-                {/* Add more dropdown items as needed */}
-              </ul>
             </li>
             <li className='nav-item'>
               <Link to='/services' className='nav-links' onClick={closeMobileMenu}>

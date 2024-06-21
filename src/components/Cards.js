@@ -27,6 +27,7 @@ function Cards() {
           </ul>
         </div>
         <hr className='separator' />
+        <h1 className='hlight'>ARTICLES ABOUT FRN@BROWN</h1>
       <div className='cards__container'>
         <div className='cards__wrapper'>
           <ul className='cards__items'>
@@ -41,14 +42,14 @@ function Cards() {
             <CardItem
               src='images/impact.jpg'
               text='Our Impact: How Food Recovery Network At Brown Reduces Food Waste'
-              label='Adventure'
+              label='Article'
               path='https://ediblerhody.ediblecommunities.com/food-thought/food-recovery-network-how-student-led-organization-reduces-food-waste-brown-university'
             />
             <CardItem
-              src='images/img-8.jpg'
-              text='Ride through the Sahara Desert on a guided camel tour'
-              label='Adrenaline'
-              path='/sign-up'
+              src='images/food.jpg'
+              text='How We Feed R.I. Homeless'
+              label='Article'
+              path='https://www.browndailyherald.com/article/2012/02/campus-leftovers-feed-r-i-homeless'
             />
           </ul>
         </div>
