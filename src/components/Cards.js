@@ -58,6 +58,7 @@ function Cards() {
       </div>
       <hr className='separator' />
       <h1 className='hlight'>OUR COMMUNITY PARTNERS</h1>
+      <h1 className='blight'>Providence Rescue Mission | ELISHA Project | St. Anthony's Church | Crossroads R.I.</h1>
     </div>
   );
 }

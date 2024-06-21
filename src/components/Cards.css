@@ -183,3 +183,14 @@ h1 {
   margin-bottom: -40px;
   font-size: 30px;
 }
+
+.blight {
+  margin-left: 120px;
+  margin-right: 120px;
+  color: #000000; /* Set the color to gold */
+  font-family: 'Abel', sans-serif;
+  text-align: center; /* Adjust text alignment as needed */
+  margin-top: 70px;
+  margin-bottom: 50px;
+  font-size: 25px;
+}
