@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+
+body {
+  font-family: 'Abel', sans-serif;
+}
+.info-text {
+    text-align: center;
+    font-size: 25px;
+    font-style: italic;
+    font-family: 'Abel', sans-serif;
+    margin-top: 150px; /* Adjust as needed to position lower on the page */
+    justify-content: center;
+    margin-left: 270px;
+    margin-right: 270px;
+    margin-bottom: 150px;
+  }
+  .separator {
+    width: 65%;
+    border: none;
+    border-top: 1px solid rgb(210, 210, 210); /* Gray line separator */
+    margin: 60px auto;
+    margin-bottom: 10px;
+  }
+  .highlight {
+    font-weight: 900;
+    margin-left: 120px;
+    margin-right: 120px;
+    color:#e0a320; /* Set the color to gold */
+    font-family: 'Abel', sans-serif;
+  }
+
+  .contact-list {
+    margin-left: 250px;
+    font-size: 22px;
+  }
+  
+  .contact-list ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .contact-list li {
+    font-weight: 900;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    font-family: 'Abel', sans-serif;
+  }
+  
+  .contact-list li strong {
+    display: block; /* Ensures each name appears on a new line */
+    font-weight: bold;
+  }
+  
+  .contact-list a {
+    text-decoration: none;
+    font-family: 'Abel', sans-serif;
+    color: #49a040; /* Adjust the color as needed */
+  }
+
+  .des-list {
+    margin-left: 250px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: 22px;
+    font-family: 'Abel', sans-serif;
+  }

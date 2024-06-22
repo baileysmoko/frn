@@ -1,25 +1,39 @@
 import React from 'react';
 import '../../App.css';
+import './Contact.css';
+import Footer from '../Footer';
 
 function Contact() {
   return (
     <>
-      <div style={{ textAlign: 'center', fontSize: '36px', marginBottom: '20px' }}>Send Us an Email</div>
-      <div style={{ textAlign: 'center', fontSize: '20px' }}>
-        <ul style={{ listStyleType: 'none', padding: '0' }}>
-          <li><strong>General:</strong> <a href="mailto:foodrecoverynetwork@brown.edu">foodrecoverynetwork@brown.edu</a></li>
-          <li><strong>Ayla Kim:</strong> <a href="mailto:ayla_kim@brown.edu">ayla_kim@brown.edu</a></li>
-          <li><strong>Emma Weech:</strong> <a href="mailto:emma_weech@brown.edu">emma_weech@brown.edu</a></li>
-          <li><strong>Seth Peiris:</strong> <a href="mailto:seth_peiris@brown.edu">seth_peiris@brown.edu</a></li>
-          <li><strong>Alex Zeng:</strong> <a href="mailto:alexander_zeng@brown.edu">alexander_zeng@brown.edu</a></li>
-          <li><strong>Suzie Zhang:</strong> <a href="mailto:chuyi_zhang1@brown.edu">chuyi_zhang1@brown.edu</a></li>
-          <li><strong>David Veloso:</strong> <a href="mailto:david_veloso@brown.edu">david_veloso@brown.edu</a></li>
-          <li><strong>Athena Deng:</strong> <a href="mailto:athena_deng@brown.edu">athena_deng@brown.edu</a></li>
-          <li><strong>Ran Zhao:</strong> <a href="mailto:ran_zhao@brown.edu">ran_zhao@brown.edu</a></li>
-          <li><strong>Bailey Smoko:</strong> <a href="mailto:bailey_smoko@brown.edu">bailey_smoko@brown.edu</a></li>
+      <div className="info-text">
+      The US wastes 35 million tons of food every year while 1 every 6 Americans is food-insecure. If you are interested in learning more about Brown’s Chapter of FRN or have ideas on how we can further reduce food waste and help homeless shelters stay functional, shoot us an email!
+      </div>
+      <div className='separator'></div>
+      <div className='highlight' style={{ fontSize: '36px', marginBottom: '20px', marginTop: '70px', marginLeft: '250px' }}>
+        Send Us an Email
+      </div>
+      <div className='des-list'>
+          Please allow us at least 3 days to respond to your emails. We will do our best to respond as soon as we can.
+      </div>
+      <div className='contact-list'>
+      <ul>
+          <li>General: </li><a href="mailto:foodrecoverynetwork@brown.edu">foodrecoverynetwork@brown.edu</a>
+          <li>Ayla Kim:</li> <a href="mailto:ayla_kim@brown.edu">ayla_kim@brown.edu</a>
+          <li>Emma Weech: </li><a href="mailto:emma_weech@brown.edu">emma_weech@brown.edu</a>
+          <li>Seth Peiris: </li><a href="mailto:seth_peiris@brown.edu">seth_peiris@brown.edu</a>
+          <li>Alex Zeng: </li><a href="mailto:alexander_zeng@brown.edu">alexander_zeng@brown.edu</a>
+          <li>David Veloso: </li><a href="mailto:david_veloso@brown.edu">david_veloso@brown.edu</a>
+          <li>Athena Deng: </li><a href="mailto:athena_deng@brown.edu">athena_deng@brown.edu</a>
+          <li>Ran Zhao: </li><a href="mailto:ran_zhao@brown.edu">ran_zhao@brown.edu</a>
+          <li>Bailey Smoko: </li><a href="mailto:bailey_smoko@brown.edu">bailey_smoko@brown.edu</a>
           {/* Add more people and their emails as needed */}
         </ul>
       </div>
+      <div className='des-list'>
+      &nbsp;
+      </div>
+      <Footer />
     </>
   );
 }
