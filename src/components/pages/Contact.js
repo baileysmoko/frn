@@ -9,7 +9,7 @@ function Contact() {
       <div className="info-text">
       The US wastes 35 million tons of food every year while 1 every 6 Americans is food-insecure. If you are interested in learning more about Brown’s Chapter of FRN or have ideas on how we can further reduce food waste and help homeless shelters stay functional, shoot us an email!
       </div>
-      <div className='separator'></div>
+      <div className='separator2'></div>
       <div className='highlight' style={{ fontSize: '36px', marginBottom: '20px', marginTop: '70px', marginLeft: '250px' }}>
         Send Us an Email
       </div>
