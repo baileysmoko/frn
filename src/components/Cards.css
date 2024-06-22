@@ -194,3 +194,29 @@ h1 {
   margin-bottom: 50px;
   font-size: 25px;
 }
+
+.btns {
+  /* Add styles for the button here */
+  font-family: 'Abel', sans-serif;
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  text-align: center;
+  text-decoration: none;
+  border: 2px solid #000000 !important; /* Set border color to gold */
+  color: #000000; /* Set text color to gold */
+  background-color: transparent; /* Transparent background */
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+.btns:hover {
+  background-color: #000000; /* Change background color on hover */
+  color: #ffffff; /* Change text color on hover */
+}
+.button-container {
+  display: flex;
+  justify-content: center; /* Center items horizontally */
+  margin-top: 20px; /* Adjust margin as needed */
+  left: 50%;
+}

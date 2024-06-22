@@ -1,8 +1,11 @@
 import React from 'react';
 import './Cards.css';
 import CardItem from './CardItem';
-
+import { Button } from './Button'; // Import your Button component
 function Cards() {
+  const handleButtonClick = () => {
+    window.open('https://docs.google.com/spreadsheets/d/12FrjTKR6OTZoPPXx7t6NWFnBzCxf_WJt1_t5Vr3Vltk/edit?gid=110689926#gid=110689926', '_blank');
+  };
   return (
     <div className='cards'>
       <h1 className='highlight'>Founded in 2012, the Food Recovery Network at Brown is the second chapter in the United States to open under the FRN national network</h1>
@@ -28,6 +31,14 @@ function Cards() {
         </div>
         <hr className='separator' />
         <h1 className='highlight'>Since our founding in 2012, Food Recovery Network at Brown has recovered over 120,000 pounds of food! We currently recover from the Blue Room, Ivy Room, Brown RISD Hillel, ERC  Café, and Brown Market Shares.</h1>
+        <div className='button-container'>
+        <button
+          className='btns'
+          onClick={handleButtonClick}
+        >
+          POUNDS TO DATE
+        </button>
+      </div>
         <hr className='separator' />
         <h1 className='hlight'>ARTICLES ABOUT FRN@BROWN</h1>
       <div className='cards__container'>
