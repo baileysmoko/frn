@@ -1,8 +1,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
 
+/* || General styles */
+
 body {
   font-family: 'Abel', sans-serif;
 }
+
+h1 {
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
+}
+
+h3 {
+  text-align: center;
+}
+
+h4 {
+  text-align: center;
+}
+
+/* || Typography */
+
 .info-text {
     text-align: center;
     font-size: 25px;

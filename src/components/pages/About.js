@@ -4,7 +4,7 @@ import ayla from './Images/Ayla.png';
 import emma from './Images/Emma.png';
 import seth from './Images/Seth.png';
 import alex from './Images/Alex.png';
-import suzie from './Images/Suzie.png';
+// import suzie from './Images/Suzie.png';
 import david from './Images/David.png';
 import athena from './Images/Athena.png';
 import ran from './Images/Ran.png';
