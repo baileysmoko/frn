@@ -24,21 +24,30 @@ function About() {
   ];
 
   return (
-    <div style={{ backgroundColor: 'white', position: "relative" }}>
+    <div className="about-heading-container">
       <div style={{ overflow: "hidden" }}>
-        <img src={team} alt="Team Photo" style={{ width: "100%", height: "auto", objectFit: "cover", objectPosition: "50% 25%", filter: "brightness(0.8)" }} /> {/* Team photo at the top */}
-        <h1 style={{ fontFamily: "'Abel', sans-serif", position: "absolute", top: "9%", left: "50%", transform: "translate(-50%, -50%)", color: "white", fontSize: "60px" }}>OUR TEAM</h1>
+        <img src={team} alt="Team Photo" className="about-img" /> {/* Team photo at the top */}
+        <h1 className="about-heading">
+          OUR TEAM
+        </h1>
       </div>
+      
       <div style={{ display: "flex", justifyContent: "left" }}>
         <div style={{ maxWidth: "800px", marginLeft: "200px" }}>
-          <p style={{ textAlign: "left", fontSize: "24px", fontWeight: "bold", lineHeight: "1.5", padding: "10px 0" }}>FRN BROWN TEAM:</p>
+          <h2 className="about-subheading">
+            FRN BROWN TEAM:
+          </h2>
           <div style={{ display: "flex", flexWrap: "wrap", justifyContent: "left" }}>
             {people.map(person => (
               <div key={person.name} style={{ margin: "10px", display: "flex", alignItems: "center" }}>
                 <img src={person.image} alt={person.name} style={{ width: "200px", height: "200px" }} />
                 <div style={{ marginLeft: "20px" }}>
-                  <h3>{person.name}</h3>
-                  <p style={{ fontSize: "18px", lineHeight: "1.4" }}>{person.introduction}</p>
+                  <h4>
+                    {person.name}
+                  </h4>
+                  <body style={{ fontSize: "18px", lineHeight: "1.4" }}>
+                    {person.introduction}
+                  </body>
                 </div>
               </div>
             ))}

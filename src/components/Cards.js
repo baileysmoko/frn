@@ -8,13 +8,15 @@ function Cards() {
   };
   return (
     <div className='cards'>
-      <h1 className='highlight'>Founded in 2012, the Food Recovery Network at Brown is the second chapter in the United States to open under the FRN national network</h1>
+      <h2 className='highlight'>
+        Founded in 2012, the Food Recovery Network at Brown is the second chapter in the United States to open under the FRN national network
+      </h2>
       <hr className='separator' />
       <div className='image-wrapper'>
-        <img src='images/graphic-1.jpeg' alt="Food Recovery Network at Brown" className='cards__image' />
+        <img src='images/graphic-1.jpeg' alt="Food Recovery Network at Brown" className='cards__image'/>
       </div>
       <hr className='separator' />
-      <h1 className='hlight'>WHAT WE DO</h1>
+      <h2 className='hlight'>WHAT WE DO</h2>
  
         <div className='cards__wrapper'>
           <ul className='cards__items'>
@@ -30,7 +32,9 @@ function Cards() {
           </ul>
         </div>
         <hr className='separator' />
-        <h1 className='highlight'>Since our founding in 2012, Food Recovery Network at Brown has recovered over 120,000 pounds of food! We currently recover from the Blue Room, Ivy Room, Brown RISD Hillel, ERC  Café, and Brown Market Shares.</h1>
+        <h2 className='highlight'>
+          Since our founding in 2012, Food Recovery Network at Brown has recovered over 120,000 pounds of food! We currently recover from the Blue Room, Ivy Room, Brown RISD Hillel, ERC  Café, and Brown Market Shares.
+        </h2>
         <div className='button-container'>
         <button
           className='btns'
@@ -40,7 +44,9 @@ function Cards() {
         </button>
       </div>
         <hr className='separator' />
-        <h1 className='hlight'>ARTICLES ABOUT FRN@BROWN</h1>
+        <h2 className='hlight'>
+          ARTICLES ABOUT FRN@BROWN
+        </h2>
       <div className='cards__container'>
         <div className='cards__wrapper'>
           <ul className='cards__items'>
@@ -68,8 +74,12 @@ function Cards() {
         </div>
       </div>
       <hr className='separator' />
-      <h1 className='hlight'>OUR COMMUNITY PARTNERS</h1>
-      <h1 className='blight'>Providence Rescue Mission | ELISHA Project | St. Anthony's Church | Crossroads R.I.</h1>
+      <h2 className='hlight'>
+        OUR COMMUNITY PARTNERS
+      </h2>
+      <h2 className='blight'>
+        Providence Rescue Mission | ELISHA Project | St. Anthony's Church | Crossroads R.I.
+      </h2>
     </div>
   );
 }

@@ -7,81 +7,160 @@ body {
 }
 
 h1 {
+  font-family: 'Abel', sans-serif;
+  font-size: 60px;
   text-align: center;
+  color: #fff;
+  z-index: 1;
 }
 
 h2 {
+  font-family: 'Abel', sans-serif;
+  font-size: 30px;
   text-align: center;
+  color:#e0a320; /* Set the color to gold */
 }
 
 h3 {
-  text-align: center;
+  font-family: 'Abel', sans-serif;
+  font-size: 25px;
+  text-align: left;
+  font-style: italic;
 }
 
 h4 {
-  text-align: center;
+  font-family: 'Abel', sans-serif;
+  font-size: 22px;
+  text-align: left;
+  font-style: bold;
 }
 
-/* || Typography */
+/* || About */
+
+.about-heading-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.about-img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  object-position: 50% 25%;
+  filter: brightness(70%);
+}
+
+.about-heading {
+  position: absolute;
+  top: 12%; 
+  left: 50%; 
+  transform: translate(-50%, -50%); 
+}
+
+.about-subheading {
+  position: relative;
+  text-align: left !important;
+  padding: 10px 0;
+}
+
+@media (min-width: 500px) {
+  .about-media {
+    display: grid;
+    grid-template-columns: fit-content(200px) 1fr;
+    grid-template-rows:1fr auto;
+    grid-template-areas:
+      "image content"
+      "image footer";
+    grid-gap: 20px;
+    margin-bottom: 4em;
+  }
+
+  .about-media-flip {
+    grid-template-columns: 1fr fit-content(250px);
+    grid-template-areas:
+      "content image"
+      "footer image";
+  }
+
+  .about-headshot {
+    grid-area: image;
+  }
+
+  .about-content {
+    grid-area: content;
+  }
+
+  .about-footer {
+    grid-area: footer;
+  }
+
+}
+
+
+/* || Contact */
 
 .info-text {
-    text-align: center;
-    font-size: 25px;
-    font-style: italic;
-    font-family: 'Abel', sans-serif;
-    margin-top: 150px; /* Adjust as needed to position lower on the page */
-    justify-content: center;
-    margin-left: 270px;
-    margin-right: 270px;
-    margin-bottom: 150px;
-  }
-  .separator2 {
-    width: 65%;
-    border: none;
-    border-top: 1px solid rgb(210, 210, 210); /* Gray line separator */
-    margin: 60px auto;
-    margin-bottom: 10px;
-  }
-  .highlight {
-    font-weight: 900;
-    margin-left: 120px;
-    margin-right: 120px;
-    color:#e0a320; /* Set the color to gold */
-    font-family: 'Abel', sans-serif;
-  }
+  text-align: center;
+  font-size: 25px;
+  font-style: italic;
+  font-family: 'Abel', sans-serif;
+  margin-top: 150px; /* Adjust as needed to position lower on the page */
+  justify-content: center;
+  margin-left: 270px;
+  margin-right: 270px;
+  margin-bottom: 150px;
+}
 
-  .contact-list {
-    margin-left: 250px;
-    font-size: 22px;
-  }
-  
-  .contact-list ul {
-    list-style-type: none;
-    padding: 0;
-  }
-  
-  .contact-list li {
-    font-weight: 900;
-    margin-bottom: 10px;
-    margin-top: 20px;
-    font-family: 'Abel', sans-serif;
-  }
-  
-  .contact-list li strong {
-    display: block; /* Ensures each name appears on a new line */
-    font-weight: bold;
-  }
-  
-  .contact-list a {
-    text-decoration: none;
-    font-family: 'Abel', sans-serif;
-    color: #49a040; /* Adjust the color as needed */
-  }
+.separator2 {
+  width: 65%;
+  border: none;
+  border-top: 1px solid rgb(210, 210, 210); /* Gray line separator */
+  margin: 60px auto;
+  margin-bottom: 10px;
+}
 
-  .des-list {
-    margin-left: 250px;
-    margin-top: 30px;
-    margin-bottom: 30px;
-    font-size: 22px;
-    font-family: 'Abel', sans-serif;
-  }
+.highlight {
+  font-weight: 900;
+  margin-left: 120px;
+  margin-right: 120px;
+  color:#e0a320; /* Set the color to gold */
+  font-family: 'Abel', sans-serif;
+}
+
+.contact-list {
+  margin-left: 250px;
+  font-size: 22px;
+}
+
+.contact-list ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.contact-list li {
+  font-weight: 900;
+  margin-bottom: 10px;
+  margin-top: 20px;
+  font-family: 'Abel', sans-serif;
+}
+
+.contact-list li strong {
+  display: block; /* Ensures each name appears on a new line */
+  font-weight: bold;
+}
+
+.contact-list a {
+  text-decoration: none;
+  font-family: 'Abel', sans-serif;
+  color: #49a040; /* Adjust the color as needed */
+}
+
+.des-list {
+  margin-left: 250px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-size: 22px;
+  font-family: 'Abel', sans-serif;
+}
