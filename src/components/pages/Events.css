@@ -1,0 +1,60 @@
+.highlights {
+    color:#e0a320; /* Set the color to gold */
+    font-family: 'Abel', sans-serif;
+    text-align: center;
+    margin-bottom: 100px;
+  }
+
+  .event-list {
+    font-family: 'Abel', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center the events horizontally */
+    margin: 0 auto; /* Center the event list container */
+    max-width: 800px; /* Optional: set a max-width to control the width of the event list */
+    padding: 20px; /* Optional: add some padding */
+  }
+  
+  .event {
+    font-family: 'Abel', sans-serif;
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 50px;
+    width: 100%; /* Ensure the event takes full width of the container */
+    max-width: 1000px; /* Optional: set a max-width for each event */
+  }
+  
+  .event-image {
+    width: 220px;
+    height: auto;
+    margin-right: 20px;
+  }
+  
+  .event-details {
+    font-family: 'Abel', sans-serif;
+    flex: 1;
+  }
+  
+  .event-title {
+    font-weight: 900;
+    color: gray;
+    font-style: normal;
+    font-family: 'Abel', sans-serif;
+    font-size: 34px;
+    margin: 0 0 10px;
+  }
+  
+  .event-description {
+    color: gray;
+    font-family: 'Abel', sans-serif;
+    font-size: 20px;
+    margin: 0;
+  }
+  .event-date {
+    font-weight: 900;
+    font-family: 'Abel', sans-serif;
+    font-size: 20px;
+    color: rgb(71, 145, 54);
+    margin: 0 0 10px; /* Add margin below the date */
+  }
+  
