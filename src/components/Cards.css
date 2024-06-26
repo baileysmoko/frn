@@ -150,15 +150,15 @@
   font-family: 'Abel', sans-serif !important;
   font-size: 20px;
   text-align: left; /* Adjust text alignment as needed */
-  margin-left: 123px; /* Center the description and adjust margins */
+  margin-left: 9%; /* Center the description and adjust margins */
   max-width: 800px; /* Adjust maximum width as needed */
   padding: 0 20px; /* Optional: Add padding to the description */
-  margin-right: 100px;
+  margin-right: 2%;
   margin-top: -2px;
 }
 .apple-image {
   float: right;
-  margin-right: 73px;
+  margin-right: 9%;
   max-width: 370px; /* Adjust the width of the apple image */
   height: auto; /* Maintain aspect ratio */
   margin-top: 0px;

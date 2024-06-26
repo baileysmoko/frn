@@ -108,9 +108,11 @@ h4 {
   font-family: 'Abel', sans-serif;
   margin-top: 150px; /* Adjust as needed to position lower on the page */
   justify-content: center;
-  margin-left: 270px;
+  margin-left: 18%;
   margin-right: 270px;
   margin-bottom: 150px;
+  width: 64%;
+  margin: 150px auto;
 }
 
 .separator2 {
@@ -123,14 +125,14 @@ h4 {
 
 .highlight {
   font-weight: 900;
-  margin-left: 120px;
+  margin-left: 18%;
   margin-right: 120px;
   color:#e0a320; /* Set the color to gold */
   font-family: 'Abel', sans-serif;
 }
 
 .contact-list {
-  margin-left: 250px;
+  margin-left: 18%;
   font-size: 22px;
 }
 
@@ -158,9 +160,15 @@ h4 {
 }
 
 .des-list {
-  margin-left: 250px;
+  margin-left: 18%;
   margin-top: 30px;
   margin-bottom: 30px;
   font-size: 22px;
   font-family: 'Abel', sans-serif;
+}
+.highli {
+  font-family: 'Abel', sans-serif;
+  font-weight: 900;
+  margin-left: 18%;
+  color:#e0a320; /* Set the color to gold */
 }

@@ -3,9 +3,13 @@
     font-family: 'Abel', sans-serif;
     text-align: center;
     margin-bottom: 100px;
+    width: 80%;
+    margin: 0 auto;
   }
 
   .event-list {
+    width: 80%;
+    margin: 0 auto;
     font-family: 'Abel', sans-serif;
     display: flex;
     flex-direction: column;
@@ -13,6 +17,7 @@
     margin: 0 auto; /* Center the event list container */
     max-width: 800px; /* Optional: set a max-width to control the width of the event list */
     padding: 20px; /* Optional: add some padding */
+    margin: 0 auto;
   }
   
   .event {
@@ -25,7 +30,7 @@
   }
   
   .event-image {
-    width: 220px;
+    width: 30%;
     height: auto;
     margin-right: 20px;
   }
