@@ -164,7 +164,7 @@ p {
 }
 
 .contact-list {
-  margin-left: 15%;
+  margin-left: 17.5%;
   font-size: 22px;
 }
 
@@ -192,7 +192,7 @@ p {
 }
 
 .des-list {
-  margin-left: 15%;
+  margin-left: 17.5%;
   margin-top: 30px;
   margin-bottom: 30px;
   font-size: 22px;
@@ -201,6 +201,6 @@ p {
 .highli {
   font-family: 'Abel', sans-serif;
   font-weight: 900;
-  margin-left: 15%;
+  margin-left: 17.5%;
   color:#feda63; /* Set the color to gold */
 }
