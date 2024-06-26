@@ -115,9 +115,10 @@
   }
 }
 
-.highlight {
-  margin-left: 120px;
-  margin-right: 120px;
+.highl {
+  width: 78%;
+  margin: 0 auto;
+  text-align: center;
   color:#e0a320; /* Set the color to gold */
   font-family: 'Abel', sans-serif;
 }
@@ -170,19 +171,19 @@
 }
 
 .hlight {
-  margin-left: 120px;
-  margin-right: 120px;
+  width: 78%;
   color: #e0a320; /* Set the color to gold */
   font-family: 'Abel', sans-serif;
   text-align: center; /* Adjust text alignment as needed */
+  margin: 0 auto;
   margin-top: 40px;
   margin-bottom: -40px;
   font-size: 30px;
 }
 
 .blight {
-  margin-left: 120px;
-  margin-right: 120px;
+  width: 78%;
+  margin: 0 auto;
   color: #000000; /* Set the color to gold */
   font-family: 'Abel', sans-serif;
   text-align: center; /* Adjust text alignment as needed */
@@ -215,4 +216,20 @@
   justify-content: center; /* Center items horizontally */
   margin-top: 20px; /* Adjust margin as needed */
   left: 50%;
+}
+
+
+
+@media only screen and (max-width: 1200px) {
+  .apple-image {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .frn-description {
+    width: 85%;
+    margin: 0 auto;
+    text-align: center;
+  }
 }

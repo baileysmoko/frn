@@ -8,7 +8,7 @@ function Cards() {
   };
   return (
     <div className='cards'>
-      <h2 className='highlight'>
+      <h2 className='highl'>
         Founded in 2012, the Food Recovery Network at Brown is the second chapter in the United States to open under the FRN national network
       </h2>
       <hr className='separator' />
@@ -32,7 +32,7 @@ function Cards() {
           </ul>
         </div>
         <hr className='separator' />
-        <h2 className='highlight'>
+        <h2 className='highl' style={{ marginTop: '40px'}}>
           Since our founding in 2012, Food Recovery Network at Brown has recovered over 120,000 pounds of food! We currently recover from the Blue Room, Ivy Room, Brown RISD Hillel, ERC  Café, and Brown Market Shares.
         </h2>
         <div className='button-container'>
@@ -73,7 +73,7 @@ function Cards() {
           </ul>
         </div>
       </div>
-      <hr className='separator' />
+      <hr className='separator' style={{marginTop: '0px'}}/>
       <h2 className='hlight'>
         OUR COMMUNITY PARTNERS
       </h2>

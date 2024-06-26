@@ -44,5 +44,6 @@
     border: none;
     border-top: 1px solid rgb(210, 210, 210); /* Gray line separator */
     margin: 60px auto;
+    margin-bottom: 10px;
   }
   
