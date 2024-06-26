@@ -27,8 +27,9 @@ function Navbar() {
       <nav className={visible ? 'navbar' : 'navbar hidden'} style={{ backgroundColor: 'white' }}>
         <div className='navbar-container'>
           <Link to='/' className='navbar-logo' onClick={closeMobileMenu}>
-            <img src={logo} alt='Logo' className='navbar-logo-img' style={{ width: '140px', height: 'auto', marginRight: '120px' }} />
+            <img src={logo} alt='Logo' className='navbar-logo-img' style={{ width: '140px', height: 'auto'}} />
           </Link>
+          </div>
           <div className='menu-icon' onClick={handleClick}>
             <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
           </div>
@@ -64,7 +65,6 @@ function Navbar() {
               </a>
             </li>
           </ul>
-        </div>
       </nav>
     </>
   );

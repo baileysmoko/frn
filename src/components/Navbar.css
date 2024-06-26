@@ -9,7 +9,6 @@
   font-family: 'Abel', sans-serif !important;
   height: 130px; /* You can adjust the height as needed */
   display: flex;
-  justify-content: center;
   align-items: center;
   font-size: 1.2rem;
   position: sticky;
@@ -32,13 +31,15 @@
 }
 
 .navbar-logo {
+  margin-left: 30px;
+  margin-right: 30px;
+  float: right;
   color: #000; /* Adjusted color */
   justify-self: start;
   cursor: pointer;
   text-decoration: none;
   font-size: 2rem;
   display: flex;
-  align-items: center;
 }
 
 .fa-typo3 {
@@ -48,12 +49,14 @@
 
 .nav-menu {
   display: flex;
-  grid-gap: 10px;
+  gap: 10px;
   list-style: none;
   text-align: center;
   width: auto; /* Adjusted width */
   justify-content: flex-end; /* Adjusted alignment */
-  margin-right: 20px; /* Adjusted margin */
+  display: flex;
+  margin-left: auto;
+  margin-right: 30px;
 }
 
 .nav-item {
@@ -62,6 +65,7 @@
 }
 
 .nav-links {
+  margin-right: 20px;
   color: black;
   display: flex;
   align-items: center;
