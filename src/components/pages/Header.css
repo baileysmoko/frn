@@ -1,0 +1,17 @@
+.header-container {
+    position: relative;
+    height: 450px; /* Adjust the height as needed */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .header-title {
+    font-family: 'Abel', sans-serif;
+    position: absolute;
+    color: white;
+    font-size: 35; /* Adjust the font size as needed */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Optional: Add some text shadow for better readability */
+  }

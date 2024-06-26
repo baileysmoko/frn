@@ -1,8 +1,11 @@
 import React from 'react';
 import './Events.css';
-
+import { useEffect } from 'react';
 
 function Event({ image, title, date, description }) {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div className="event">
       <img src={image} alt={title} className="event-image" />

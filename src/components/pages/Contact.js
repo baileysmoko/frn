@@ -2,8 +2,12 @@ import React from 'react';
 import '../../App.css';
 import './Contact.css';
 import Footer from '../Footer';
+import { useEffect } from 'react';
 
 function Contact() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <>
       <div className="info-text">
