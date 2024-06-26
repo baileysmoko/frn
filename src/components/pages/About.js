@@ -22,8 +22,8 @@ function About() {
     { name: "Alex Zeng", introduction: "I’m a junior at Brown from Dallas, Texas, studying biochemistry and archaeology.", image: alex },
     { name: "David Veloso", introduction: "I’m a sophomore at Brown from Baltimore, Maryland, studying Mechanical Engineering. This is my first semester on FRN E-board!  Through FRN, I’ve learned so much about food insecurity around Providence and how much impact one shift can have on the community.  Outside of FRN, I love running and watching anime and basketball.", image: david },
     { name: "Athena Deng", introduction: "I’m a first-year at Brown (currently) concentrating in Computer Science and Cognitive Neuroscience! I’m from the Chicago suburbs and this is my first semester on FRN e-board.", image: athena },
-    { name: "Ran Zhao", introduction: "I’m a freshman at Brown from Hong Kong studying comparative literature! This is my first semester on FRN E-board, and it’s been so wonderful both seeing the amount of food we’re able to rescue and interacting with community partners to learn about their approaches to tackling food insecurity. Outside of FRN, I love drawing and thinking about frogs.", image: ran },
-    { name: "Bailey Smoko", introduction: "I am a sophomore at Brown from Connecticut studying statistics and math-cs. I have always been passionate about promoting sustainability, so FRN has been an amazing way for me to help make a difference. In my free time, I like to play basketball, solve Rubik's cubes, and play music.", image: bailey },
+    { name: "Ran Zhao", introduction: "I’m a sophomore at Brown from Hong Kong studying comparative literature! This is my first semester on FRN E-board, and it’s been so wonderful both seeing the amount of food we’re able to rescue and interacting with community partners to learn about their approaches to tackling food insecurity. Outside of FRN, I love drawing and thinking about frogs.", image: ran },
+    { name: "Bailey Smoko", introduction: "I am a junior at Brown from Connecticut studying statistics and math-cs. I have always been passionate about promoting sustainability, so FRN has been an amazing way for me to help make a difference. In my free time, I like to play basketball, solve Rubik's cubes, and play music.", image: bailey },
     // Add more people as needed
   ];
 
@@ -134,7 +134,7 @@ function About() {
             <div class="about-media-content">
               <h4 className="about-media-heading">Ran Zhao</h4>
               <p>
-                I’m a freshman at Brown from Hong Kong studying comparative literature! This is my second semester on FRN E-board, and it’s been so wonderful both seeing the amount of food we’re able to rescue and interacting with community partners to learn about their approaches to tackling food insecurity. Outside of FRN, I love drawing and thinking about frogs.
+                I’m a sophomore at Brown from Hong Kong studying comparative literature! This is my second semester on FRN E-board, and it’s been so wonderful both seeing the amount of food we’re able to rescue and interacting with community partners to learn about their approaches to tackling food insecurity. Outside of FRN, I love drawing and thinking about frogs.
               </p>
             </div>
           </div>
@@ -147,7 +147,7 @@ function About() {
             <div class="about-media-content about-media-content-flip">
               <h4 className="about-media-heading">Bailey Smoko</h4>
               <p>
-                I am a sophomore at Brown from Connecticut studying statistics and math-cs. I have always been passionate about promoting sustainability, so FRN has been an amazing way for me to help make a difference. In my free time, I like to play basketball, solve Rubik's cubes, and play music.
+                I am a junior at Brown from Connecticut studying statistics and math-cs. I have always been passionate about promoting sustainability, so FRN has been an amazing way for me to help make a difference. In my free time, I like to play basketball, solve Rubik's cubes, and play music.
               </p>
             </div>
           </div>
