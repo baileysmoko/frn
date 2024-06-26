@@ -18,7 +18,7 @@ h2 {
   font-family: 'Abel', sans-serif;
   font-size: 35px;
   text-align: center;
-  color:#e0a320; /* Set the color to gold */
+  color:#feda63; /* Set the color to gold */
 }
 
 h3 {
@@ -100,7 +100,7 @@ p {
     max-width: 100%; /* Ensure the image fits within its container */
     height: auto; /* Maintain aspect ratio */
     border-radius: 3%;
-    border: 2px solid #49a040;
+    border: 2px solid #1cae4f;
     object-fit: cover; /* Ensure the image covers the area if necessary */
   }
 
@@ -159,7 +159,7 @@ p {
   font-weight: 900;
   margin-left: 15%;
   margin-right: 120px;
-  color:#e0a320; /* Set the color to gold */
+  color:#feda63; /* Set the color to gold */
   font-family: 'Abel', sans-serif;
 }
 
@@ -188,7 +188,7 @@ p {
 .contact-list a {
   text-decoration: none;
   font-family: 'Abel', sans-serif;
-  color: #49a040; /* Adjust the color as needed */
+  color: #1cae4f; /* Adjust the color as needed */
 }
 
 .des-list {
@@ -202,5 +202,5 @@ p {
   font-family: 'Abel', sans-serif;
   font-weight: 900;
   margin-left: 15%;
-  color:#e0a320; /* Set the color to gold */
+  color:#feda63; /* Set the color to gold */
 }
