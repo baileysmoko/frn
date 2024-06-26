@@ -16,7 +16,7 @@ h1 {
 
 h2 {
   font-family: 'Abel', sans-serif;
-  font-size: 30px;
+  font-size: 35px;
   text-align: center;
   color:#e0a320; /* Set the color to gold */
 }
@@ -35,6 +35,10 @@ h4 {
   font-style: bold;
 }
 
+p {
+  font-family: 'Abel', sans-serif;
+}
+
 /* || About */
 
 .about-heading-container {
@@ -48,27 +52,30 @@ h4 {
   width: 100%;
   height: auto;
   object-fit: cover;
-  object-position: 50% 25%;
+  /* object-position: 50% 25%; */
   filter: brightness(70%);
 }
 
 .about-heading {
   position: absolute;
-  top: 12%; 
+  top: 50%; 
   left: 50%; 
   transform: translate(-50%, -50%); 
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Optional: Add some text shadow for better readability */
 }
 
 .about-subheading {
   position: relative;
-  text-align: left !important;
-  padding: 10px 0;
+  padding: 40px;
 }
 
 @media (min-width: 500px) {
+  .about-media-container {
+    margin: 0 20%;
+  }
   .about-media {
     display: grid;
-    grid-template-columns: fit-content(200px) 1fr;
+    grid-template-columns: fit-content(30%) 1fr; /*fit-content(50%)*/
     grid-template-rows:1fr auto;
     grid-template-areas:
       "image content"
@@ -78,18 +85,43 @@ h4 {
   }
 
   .about-media-flip {
-    grid-template-columns: 1fr fit-content(250px);
+    grid-template-columns: 1fr fit-content(30%);
     grid-template-areas:
       "content image"
       "footer image";
   }
 
-  .about-headshot {
+  .about-media-headshot {
     grid-area: image;
   }
 
-  .about-content {
+  .about-media-headshot img {
+    grid-area: image;
+    max-width: 100%; /* Ensure the image fits within its container */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 3%;
+    border: 2px solid #49a040;
+    object-fit: cover; /* Ensure the image covers the area if necessary */
+  }
+
+  .about-media-heading {
+    font-size: 25px;
+    font-weight: bolder;
+    font-style: italic;
+    padding-bottom: 3%;
+  }
+
+  .about-media-content {
+    font-size: 22px;
+    line-height: 1.2;
     grid-area: content;
+    padding-right: 5%;
+    padding-left: 2%;
+  }
+
+  .about-media-content-flip {
+    padding-right: 2%;
+    padding-left: 5%;
   }
 
   .about-footer {
@@ -108,7 +140,7 @@ h4 {
   font-family: 'Abel', sans-serif;
   margin-top: 150px; /* Adjust as needed to position lower on the page */
   justify-content: center;
-  margin-left: 18%;
+  /* margin-left: 15%; */
   margin-right: 270px;
   margin-bottom: 150px;
   width: 64%;
@@ -125,14 +157,14 @@ h4 {
 
 .highlight {
   font-weight: 900;
-  margin-left: 18%;
+  margin-left: 15%;
   margin-right: 120px;
   color:#e0a320; /* Set the color to gold */
   font-family: 'Abel', sans-serif;
 }
 
 .contact-list {
-  margin-left: 18%;
+  margin-left: 15%;
   font-size: 22px;
 }
 
@@ -160,7 +192,7 @@ h4 {
 }
 
 .des-list {
-  margin-left: 18%;
+  margin-left: 15%;
   margin-top: 30px;
   margin-bottom: 30px;
   font-size: 22px;
@@ -169,6 +201,6 @@ h4 {
 .highli {
   font-family: 'Abel', sans-serif;
   font-weight: 900;
-  margin-left: 18%;
+  margin-left: 15%;
   color:#e0a320; /* Set the color to gold */
 }
