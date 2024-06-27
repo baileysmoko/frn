@@ -1,8 +1,7 @@
-
-import React from 'react';
+import React, { useState } from 'react';
 import '../../App.css';
 import Footer from '../Footer';
-import './Events.css'
+import './Events.css';
 import panel from './Images/panel.jpeg';
 import Event from './Event.js';
 import relay from './Images/relay.jpeg';
@@ -10,7 +9,6 @@ import social from './Images/social.jpeg';
 import drive from './Images/drive.jpg';
 import recap from './Images/recap.jpg';
 import legislation from './Images/legislation.png';
-
 
 function Events() {
   const events = [
@@ -24,7 +22,7 @@ function Events() {
       image: recap,
       title: 'End-of-Year Recap',
       date: 'May, 2024',
-      description: 'Here is a recap of everthing we achieved in the spring semester, together with our wonderful volunteers. Thank you so much for recovering with us - we are looking forward to working with you all again next fall! ',
+      description: 'Here is a recap of everything we achieved in the spring semester, together with our wonderful volunteers. Thank you so much for recovering with us - we are looking forward to working with you all again next fall!',
     },
     {
       image: drive,
@@ -52,22 +50,61 @@ function Events() {
     },
     // Add more events as needed
   ];
+
+  const eventsPerPage = 10; // Number of events per page
+  const [currentPage, setCurrentPage] = useState(1);
+
+  // Calculate index range for current page
+  const indexOfLastEvent = currentPage * eventsPerPage;
+  const indexOfFirstEvent = indexOfLastEvent - eventsPerPage;
+  const currentEvents = events.slice(indexOfFirstEvent, indexOfLastEvent);
+
+  // Handle pagination
+  const nextPage = () => {
+    setCurrentPage(currentPage + 1);
+  };
+
+  const prevPage = () => {
+    setCurrentPage(currentPage - 1);
+  };
+
+  const firstPage = () => {
+    setCurrentPage(1);
+  };
+
+  const lastPage = () => {
+    const totalPages = Math.ceil(events.length / eventsPerPage);
+    setCurrentPage(totalPages);
+  };
+
   return (
     <>
-    <div className='highlights' style={{ fontSize: '40px', marginBottom: '50px', marginTop: '70px'}}>
+      <div className='highlights' style={{ fontSize: '40px', marginBottom: '50px', marginTop: '70px'}}>
         FRN@Brown Latest Happenings
       </div>
       <div className="event-list">
-          {events.map((event, index) => (
-            <Event 
-              key={index}
-              image={event.image}
-              title={event.title}
-              date={event.date}
-              description={event.description}
-            />
-          ))}
-        </div>
+        {currentEvents.map((event, index) => (
+          <Event 
+            key={index}
+            image={event.image}
+            title={event.title}
+            date={event.date}
+            description={event.description}
+          />
+        ))}
+      </div>
+      <div className="pagination">
+        {currentPage > 1 && (
+          <button className="pagination-btn" onClick={prevPage}>
+            Previous Page
+          </button>
+        )}
+        {indexOfLastEvent < events.length && (
+          <button className="pagination-btn" onClick={nextPage}>
+            Next Page
+          </button>
+        )}
+      </div>
       <Footer />
     </>
   );

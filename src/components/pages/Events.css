@@ -63,3 +63,28 @@
     margin: 0 0 10px; /* Add margin below the date */
   }
   
+  .pagination {
+    display: flex;
+    justify-content: center; /* Center items horizontally */
+    margin-top: 20px; /* Adjust margin as needed */
+    margin-bottom: 50px;
+  }
+  
+  .pagination-btn {
+    font-family: 'Abel', sans-serif;
+    margin: 0 10px; /* Adjust spacing between buttons */
+    padding: 10px 20px;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    border: 2px solid #000000;
+    color: #000000;
+    background-color: transparent;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+  }
+  
+  .pagination-btn:hover {
+    background-color: #000000;
+    color: #ffffff;
+  }
