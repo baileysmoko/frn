@@ -83,7 +83,7 @@ p {
   }
   .about-media {
     display: grid;
-    grid-template-columns: fit-content(30%) 1fr; /*fit-content(50%)*/
+    grid-template-columns: fit-content(30%) 1fr;
     grid-template-rows:1fr auto;
     grid-template-areas:
       "image content"
@@ -99,38 +99,59 @@ p {
       "footer image";
   }
 
-  .about-media-headshot {
+  /* .about-media-headshot {
     grid-area: image;
-  }
+  } */
 
   .about-media-headshot img {
     grid-area: image;
-    max-width: 100%; /* Ensure the image fits within its container */
     height: auto; /* Maintain aspect ratio */
     border-radius: 3%;
-    /* border: 2px solid #1cae4f; */
     object-fit: cover; /* Ensure the image covers the area if necessary */
+    max-width: 100%; /* Ensure the image fits within its container */
   }
 
-  .about-media-heading {
-    font-size: 27px;
-    font-weight: bolder;
-    font-style: italic;
-    padding-bottom: 3%;
+  .about-media-logo {
+    grid-area: image;
+    width: 100%; /* Ensure the container takes full width */
+    height: auto; /* Ensure the container maintains aspect ratio */
+  }
+
+  /* Why is this not working wtf */
+  .about-media-logo img {
+    grid-area: image;
+    width: 70%;
+    height: 70%;
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 3%;
+    object-fit: fill; /* Ensure the image covers the area if necessary */
   }
 
   .about-media-content {
-    font-size: 21px;
-    line-height: 1.5;
     grid-area: content;
     padding-right: 5%;
     padding-left: 5%;
+    font-size: 21px;
+    line-height: 1.5;
     align-self: center;
   }
 
   .about-media-content-flip {
     padding-right: 5%;
     padding-left: 5%;
+  }
+
+  .about-media-heading {
+    font-size: 27px;
+    font-weight: 900;
+    padding-bottom: 3%;
+  }
+
+  /* fix this :( */
+  .about-media-heading a { 
+    font-size: 27px;
+    font-weight: 900;
+    padding-bottom: 3%;
   }
 
   .about-footer {

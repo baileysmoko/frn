@@ -15,6 +15,10 @@ import bailey from './Images/Bailey.png';
 
 // Partner Photos
 import PRM from './Images/PRM_logo.png';
+import elisha from './Images/Elisha_logo.png';
+import sunrise from './Images/SunRise_logo.png';
+import BMS from './Images/BMS_logo.png';
+import st_stephens from './Images/St_stephens_logo.png';
 
 import Footer from '../Footer';
 
@@ -192,16 +196,108 @@ function About() {
 
         <div className="about-media-container">
           <div class="about-media">
-            <div class="about-media-headshot">
+            <div class="about-media-logo">
               <Fade duration={fade_duration}>
                 <img src={PRM} alt="Providence Rescue Mission logo"/>
               </Fade>
             </div>
             <div class="about-media-content">
               <Fade duration={fade_duration}>
-                <h4 className="about-media-heading">Providence Rescue Mission</h4>
+                <h4 className="about-media-heading">
+                  <a href="https://www.providencerescuemission.org"> 
+                    Providence Rescue Mission
+                  </a>
+                </h4>
                 <p>
-                  Founded in 1999, 
+                  Founded in 1999, PRM's mission is to reach the homeless and needy of Rhode Island's urban centers with the Gospel of Jesus Christ while providing physical, emotional, educational and rehabilitative services at no expense to those in need. They are the only emergency shelter in Rhode Island open 24/7 and serve over 7,000 meals a week.
+                </p>
+              </Fade>
+            </div>
+          </div>
+        </div>
+
+        <div className="about-media-container">
+          <div class="about-media">
+            <div class="about-media-logo">
+              <Fade duration={fade_duration}>
+                <img src={elisha} alt="Elisha Project logo"/>
+              </Fade>
+            </div>
+            <div class="about-media-content">
+              <Fade duration={fade_duration}>
+                <h4 className="about-media-heading">
+                  <a href="https://elishaproject.org">
+                    Elisha Project
+                  </a>
+                </h4>
+                <p>
+                  elisha project description
+                </p>
+              </Fade>
+            </div>
+          </div>
+        </div>
+
+        <div className="about-media-container">
+          <div class="about-media">
+            <div class="about-media-logo">
+              <Fade duration={fade_duration}>
+                <img src={sunrise} alt="SunRise Forever logo"/>
+              </Fade>
+            </div>
+            <div class="about-media-content">
+              <Fade duration={fade_duration}>
+                <h4 className="about-media-heading">
+                  <a href="https://www.sunriseforeverinc.org">
+                    SunRise Forever
+                  </a>
+                </h4>
+                <p>
+                  SunRise forever description
+                </p>
+              </Fade>
+            </div>
+          </div>
+        </div>
+
+        <div className="about-media-container">
+          <div class="about-media">
+            <div class="about-media-logo">
+              <Fade duration={fade_duration}>
+                <img src={BMS} alt="Brown Market Shares logo"/>
+              </Fade>
+            </div>
+            <div class="about-media-content">
+              <Fade duration={fade_duration}>
+                <h4 className="about-media-heading">
+                  <a href="http://www.brownmarketshares.com">
+                    Brown Market Shares
+                  </a>
+                </h4>
+                <p>
+                  BMS description
+                </p>
+              </Fade>
+            </div>
+          </div>
+        </div>
+
+        <div className="about-media-container">
+          <div class="about-media">
+            <div class="about-media-headshot">
+              <Fade duration={fade_duration}>
+                <img src={st_stephens} alt="St. Stephen's logo"/>
+              </Fade>
+            </div>
+            <div class="about-media-content">
+              <Fade duration={fade_duration}>
+                <h4 className="about-media-heading">
+                  <a href="https://www.sstephens.org">
+                    Saint Stephen's Episcopal Church
+                  </a>
+                </h4>
+                <p>
+                  st stephens description
                 </p>
               </Fade>
             </div>
