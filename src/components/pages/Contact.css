@@ -190,6 +190,7 @@ p {
 
 .contact-list {
   margin-left: 17.5%;
+  margin-right: 17.5%;
   font-size: 22px;
 }
 
@@ -211,7 +212,6 @@ p {
 }
 
 .contact-list a {
-  padding-left: 2%;
   text-decoration: none;
   font-family: 'Abel', sans-serif;
   color: #1cae4f; /* Adjust the color as needed */
@@ -219,14 +219,16 @@ p {
 
 .des-list {
   margin-left: 17.5%;
+  margin-right: 17.5%;
   margin-top: 30px;
   margin-bottom: 30px;
   font-size: 22px;
   font-family: 'Abel', sans-serif;
 }
 .highli {
+  margin-left: 17.5%;
+  margin-right: 17.5%;
   font-family: 'Abel', sans-serif;
   font-weight: 900;
-  margin-left: 17.5%;
   color:#e0a320; /* Set the color to gold */
 }

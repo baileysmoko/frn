@@ -10,12 +10,12 @@ function Contact() {
   }, []);
   return (
     <>
-      <div className="info-text">
+      <div className="info-text" style={{  marginBottom: '150px', marginTop: '150px'}}>
         The US wastes 35 million tons of food every year while 1 in every 6 Americans is food-insecure. If you are interested in learning more about FRN@Brown or have ideas on how we can further reduce food waste and help homeless shelters stay functional, shoot us an email!
       </div>
       <div className='separator2'></div>
       <div className='highli' style={{ fontSize: '36px', marginBottom: '20px', marginTop: '70px'}}>
-        <h2>Reach out to us!</h2>
+        Reach out to us!
       </div>
       <div className='des-list'>
           Please allow us at least 3 days to respond to your emails. We will do our best to respond as soon as we can.

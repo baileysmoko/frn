@@ -1,9 +1,34 @@
-import React from 'react';
+import React, { useRef, useState } from 'react';
 import './Footer.css';
 import { Button } from './Button';
 import { Link } from 'react-router-dom';
+import emailjs from 'emailjs-com';
 
 function Footer() {
+  const form = useRef();
+  const [message, setMessage] = useState('');
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    const formData = new FormData(form.current);
+    const emailData = formData.get('email');
+    console.log('Sending email...', emailData); // Debugging step
+
+    emailjs
+      .sendForm('service_bwyxkaa', 'template_ywp2pd4', form.current, 'ZsMgOetuKn62a8c8a')
+      .then(
+        (result) => {
+          console.log('Email successfully sent!', result.status, result.text);
+          setMessage('Subscription successful! Thank you.');
+        },
+        (error) => {
+          console.log('Email sending failed...', error);
+          setMessage('Subscription failed: ${error.text}');
+        },
+      );
+  };
+
   return (
     <div className='footer-container'>
       <section className='footer-subscription'>
@@ -11,27 +36,25 @@ function Footer() {
           Subscribe to our LISTSERV for updates on FRN@Brown!
         </p>
         <div className='input-areas'>
-          <form>
+          <form ref={form} onSubmit={sendEmail}>
             <input
               className='footer-input'
               name='email'
               type='email'
               placeholder='Your Email'
+              required
             />
-            <Button buttonStyle='btn--outline'>Subscribe</Button>
+            <Button buttonStyle='btn--outline' type='submit'>Subscribe</Button>
           </form>
+          {message && <p>{message}</p>}
         </div>
       </section>
       <div className='footer-links'>
         <div className='footer-link-wrapper'>
-          <Link to="/about" className='footer-link'>
-            OUR TEAM
-          </Link>
+          <Link to="/about" className='footer-link'>OUR TEAM</Link>
           <span className='footer-link-separator'> | </span>
-          <Link to="/contact" className='footer-link'>
-            CONTACT US
-          </Link>
-        <span className='footer-link-separator'> | </span>
+          <Link to="/contact" className='footer-link'>CONTACT US</Link>
+          <span className='footer-link-separator'> | </span>
           <a
             href='https://docs.google.com/spreadsheets/d/12FrjTKR6OTZoPPXx7t6NWFnBzCxf_WJt1_t5Vr3Vltk/edit?gid=110689926#gid=110689926'
             target='_blank'
@@ -60,32 +83,32 @@ function Footer() {
           </a>
         </div>
       </div>
-      <section class='social-media'>
-        <div class='social-media-wrap'>
-          <div class='social-icons'>
+      <section className='social-media'>
+        <div className='social-media-wrap'>
+          <div className='social-icons'>
             <a
-              class='social-icon-link facebook'
+              className='social-icon-link facebook'
               href='https://www.facebook.com/foodatbrown/'
               target='_blank'
               aria-label='Facebook'
             >
-              <i class='fab fa-facebook-f' />
+              <i className='fab fa-facebook-f' />
             </a>
             <a
-              class='social-icon-link instagram'
+              className='social-icon-link instagram'
               href='https://www.instagram.com/frnatbrown/?igsh=MXFodm5jbjBjdHhtbg%3D%3D'
               target='_blank'
               aria-label='Instagram'
             >
-              <i class='fab fa-instagram' />
+              <i className='fab fa-instagram' />
             </a>
             <a
-              class='social-icon-link twitter'
+              className='social-icon-link twitter'
               href='https://x.com/FRNatBROWN'
               target='_blank'
               aria-label='Twitter'
             >
-              <i class='fab fa-twitter' />
+              <i className='fab fa-twitter' />
             </a>
           </div>
         </div>
