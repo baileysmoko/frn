@@ -16,9 +16,10 @@ h1 {
 
 h2 {
   font-family: 'Abel', sans-serif;
-  font-size: 35px;
+  font-size: 40px;
+  /* font-weight: lighter; */
   text-align: center;
-  color:#feda63; /* Set the color to gold */
+  color:#e0a320; /* Set the color to gold */
 }
 
 h3 {
@@ -40,6 +41,13 @@ p {
 }
 
 /* || About */
+
+.about-separator {
+  width: 78%;
+  border: none;
+  border-top: 1px solid rgb(210, 210, 210); /* Gray line separator */
+  margin: 15px auto;
+}
 
 .about-heading-container {
   position: relative;
@@ -66,12 +74,12 @@ p {
 
 .about-subheading {
   position: relative;
-  padding: 40px;
+  padding: 50px;
 }
 
 @media (min-width: 500px) {
   .about-media-container {
-    margin: 0 20%;
+    margin: 0 15%;
   }
   .about-media {
     display: grid;
@@ -80,8 +88,8 @@ p {
     grid-template-areas:
       "image content"
       "image footer";
-    grid-gap: 20px;
-    margin-bottom: 4em;
+    grid-gap: 10px;
+    margin-bottom: 3em;
   }
 
   .about-media-flip {
@@ -100,27 +108,28 @@ p {
     max-width: 100%; /* Ensure the image fits within its container */
     height: auto; /* Maintain aspect ratio */
     border-radius: 3%;
-    border: 2px solid #1cae4f;
+    /* border: 2px solid #1cae4f; */
     object-fit: cover; /* Ensure the image covers the area if necessary */
   }
 
   .about-media-heading {
-    font-size: 25px;
+    font-size: 27px;
     font-weight: bolder;
     font-style: italic;
     padding-bottom: 3%;
   }
 
   .about-media-content {
-    font-size: 22px;
-    line-height: 1.2;
+    font-size: 21px;
+    line-height: 1.5;
     grid-area: content;
     padding-right: 5%;
-    padding-left: 2%;
+    padding-left: 5%;
+    align-self: center;
   }
 
   .about-media-content-flip {
-    padding-right: 2%;
+    padding-right: 5%;
     padding-left: 5%;
   }
 
@@ -140,11 +149,8 @@ p {
   font-family: 'Abel', sans-serif;
   margin-top: 150px; /* Adjust as needed to position lower on the page */
   justify-content: center;
-  /* margin-left: 15%; */
-  margin-right: 270px;
-  margin-bottom: 150px;
   width: 64%;
-  margin: 150px auto;
+  margin: 5% auto;
 }
 
 .separator2 {
@@ -152,14 +158,12 @@ p {
   border: none;
   border-top: 1px solid rgb(210, 210, 210); /* Gray line separator */
   margin: 60px auto;
-  margin-bottom: 10px;
 }
 
 .highlight {
-  font-weight: 900;
   margin-left: 15%;
   margin-right: 120px;
-  color:#feda63; /* Set the color to gold */
+  color:#e0a320; /* Set the color to gold */
   font-family: 'Abel', sans-serif;
 }
 
@@ -186,6 +190,7 @@ p {
 }
 
 .contact-list a {
+  padding-left: 2%;
   text-decoration: none;
   font-family: 'Abel', sans-serif;
   color: #1cae4f; /* Adjust the color as needed */

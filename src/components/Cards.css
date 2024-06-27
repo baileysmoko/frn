@@ -147,14 +147,13 @@
 }
 
 .frn-description {
-  font-family: 'Abel', sans-serif !important;
+  font-family: 'Abel', sans-serif;
   font-size: 20px;
   text-align: left; /* Adjust text alignment as needed */
-  margin-left: 9%; /* Center the description and adjust margins */
-  max-width: 800px; /* Adjust maximum width as needed */
-  padding: 0 20px; /* Optional: Add padding to the description */
-  margin-right: 2%;
-  margin-top: -2px;
+  margin-left: 12%; /* Center the description and adjust margins */
+  max-width: 750px; /* Adjust maximum width as needed */
+  margin-right: 5%;
+  line-height: 1.5;
 }
 .apple-image {
   float: right;

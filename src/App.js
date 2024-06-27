@@ -1,4 +1,5 @@
 import React from 'react';
+import Fade from 'react-reveal/Fade';
 import Navbar from './components/Navbar';
 import './App.css';
 import Home from './components/pages/Home';
@@ -14,14 +15,14 @@ function App() {
     <>
       <Router>
         <Navbar />
-        <Switch>
-          <Route path='/' exact component={Home} />
-          <Route path='/events' component={events} />
-          <Route path='/involved' component={Involved} />
-          <Route path='/contact' component={Contact} />
-          <Route path="/About" component={About} />
-          <Route path="/Purpose" component={Purpose} />
-        </Switch>
+          <Switch>
+            <Route path='/' exact component={Home} />
+            <Route path='/events' component={events} />
+            <Route path='/involved' component={Involved} />
+            <Route path='/contact' component={Contact} />
+            <Route path="/About" component={About} />
+            <Route path="/Purpose" component={Purpose} />
+          </Switch>
       </Router>
     </>
   );

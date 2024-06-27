@@ -1,7 +1,7 @@
 import React from 'react';
 import './Cards.css';
 import CardItem from './CardItem';
-import { Button } from './Button'; // Import your Button component
+// import { Button } from './Button'; // Import your Button component
 function Cards() {
   const handleButtonClick = () => {
     window.open('https://docs.google.com/spreadsheets/d/12FrjTKR6OTZoPPXx7t6NWFnBzCxf_WJt1_t5Vr3Vltk/edit?gid=110689926#gid=110689926', '_blank');
@@ -9,7 +9,7 @@ function Cards() {
   return (
     <div className='cards'>
       <h2 className='highl'>
-        Founded in 2012, the Food Recovery Network at Brown is the second chapter in the United States to open under the FRN national network
+        Founded in 2012, Food Recovery Network at Brown is the second chapter in the United States to open under the FRN national network.
       </h2>
       <hr className='separator' />
       <div className='image-wrapper'>
@@ -24,16 +24,16 @@ function Cards() {
           <ul className='items'>
           
         <div className='frn-description'>
-            Food Recovery Network at Brown unites students to fight food waste and hunger by recovering surplus perishable food from campus that would otherwise go to waste and donate it to people in need. In addition to recovering food, FRN aims to create community ties both on and off College Hill. We are a group committed to creating a support network and promoting community development while closing the loop in resource distribution. FRN educates the public and our peers about issues surrounding food waste, food insecurity, and homelessness. Our events are always open to the public and encourage discussion. We want to question the structure of the current system and look for creative ways to influence or make significant changes to problematic bureaucracies and private institutions. We are staffed by engaged, driven, and curious minds and encourage collaboration with other student groups, as well as groups and individuals outside the Brown community.
+            At FRN@Brown, we fight food waste and hunger by recovering surplus perishable food from campus that would otherwise go to waste and donate it to people in need. In addition to recovering food, FRN aims to create community ties both on and off College Hill. We are a group committed to creating a support network and promoting community development while closing the loop in resource distribution. FRN educates the public and our peers about issues surrounding food waste, food insecurity, and homelessness. Our events are always open to the public and encourage discussion. We want to question the structure of the current system and look for creative ways to influence or make significant changes to problematic bureaucracies and private institutions. We are staffed by engaged, driven, and curious minds and encourage collaboration with other student groups, as well as groups and individuals outside the Brown community.
         </div>
         <div className='apple-image'>
-          <img src='images/apple.png' alt="Apple Image" className='apple-image' />
+          <img src='images/apple.png' alt="Apple" className='apple-image' />
         </div>
           </ul>
         </div>
         <hr className='separator' />
         <h2 className='highl' style={{ marginTop: '40px'}}>
-          Since our founding in 2012, Food Recovery Network at Brown has recovered over 120,000 pounds of food! We currently recover from the Blue Room, Ivy Room, Brown RISD Hillel, ERC  Café, and Brown Market Shares.
+          Since our founding in 2012, FRN@Brown has recovered over 120,000 pounds of food! We currently recover from the Blue Room, Ivy Room, Brown RISD Hillel, ERC  Café, and Brown Market Shares.
         </h2>
         <div className='button-container'>
         <button
@@ -73,7 +73,7 @@ function Cards() {
           </ul>
         </div>
       </div>
-      <hr className='separator' style={{marginTop: '0px'}}/>
+      <hr className='separator'/>
       <h2 className='hlight'>
         OUR COMMUNITY PARTNERS
       </h2>
