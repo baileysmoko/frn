@@ -27,11 +27,11 @@ function Involved() {
       .then(
         (result) => {
           console.log('Email successfully sent!', result.status, result.text);
-          setMessage('Subscription successful! Thank you.');
+          setMessage('We will be in touch! Thank you.');
         },
         (error) => {
           console.log('Email sending failed...', error);
-          setMessage(`Subscription failed: ${error.text}`);
+          setMessage(`Send failed. Please try again later.`);
         }
       );
   };
@@ -76,7 +76,7 @@ function Involved() {
             placeholder='Your Email'
             required
           />
-          <button className='bt' type='submit'>Subscribe</button>
+          <button className='bt' type='submit'>Send</button>
         </form>
         {message && <p className='message'>{message}</p>}
         <Footer />
