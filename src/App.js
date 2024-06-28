@@ -1,5 +1,4 @@
 import React from 'react';
-import Fade from 'react-reveal/Fade';
 import Navbar from './components/Navbar';
 import './App.css';
 import Home from './components/pages/Home';

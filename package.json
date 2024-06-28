@@ -20,7 +20,14 @@
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
-    "extends": "react-app"
+    "extends": [
+      "react-app",
+      "plugin:your-custom-config/recommended"
+    ],
+    "rules": {
+      "no-console": "off",
+      "react/prop-types": "warn"
+    }
   },
   "browserslist": {
     "production": [
