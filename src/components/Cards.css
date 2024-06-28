@@ -149,7 +149,7 @@
 
 .frn-description {
   font-family: 'Abel', sans-serif;
-  font-size: calc(1vw + 6px);
+  font-size: calc(0.5vw + 13px);
   text-align: left; /* Adjust text alignment as needed */
   margin-left: 5%; /* Center the description and adjust margins */
   max-width: 750px; /* Adjust maximum width as needed */
