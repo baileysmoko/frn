@@ -67,16 +67,7 @@ function Events() {
   const prevPage = () => {
     setCurrentPage(currentPage - 1);
   };
-
-  const firstPage = () => {
-    setCurrentPage(1);
-  };
-
-  const lastPage = () => {
-    const totalPages = Math.ceil(events.length / eventsPerPage);
-    setCurrentPage(totalPages);
-  };
-
+  
   return (
     <>
       <div className='highlights' style={{ fontSize: '40px', marginBottom: '50px', marginTop: '70px'}}>

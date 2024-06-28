@@ -24,7 +24,7 @@ function Footer() {
         },
         (error) => {
           console.log('Email sending failed...', error);
-          setMessage('Subscription failed: ${error.text}');
+          setMessage(`Subscription failed: ${error.text}`); // Use backticks for template literals
         },
       );
   };
@@ -57,27 +57,27 @@ function Footer() {
           <span className='footer-link-separator'> | </span>
           <a
             href='https://docs.google.com/spreadsheets/d/12FrjTKR6OTZoPPXx7t6NWFnBzCxf_WJt1_t5Vr3Vltk/edit?gid=110689926#gid=110689926'
-            target='_blank'
-            rel='noopener noreferrer'
+            rel='noopener noreferrer' // Added rel='noopener noreferrer'
             className='footer-link'
+            target='_blank'
           >
             ANNUAL REPORTS
           </a>
           <span className='footer-link-separator'> | </span>
           <a
             href='https://docs.google.com/spreadsheets/d/1YuzBM5KBdwxv-IPzfpTOIvmTidpL37fYNjkDT_su4u0/edit#gid=0'
-            target='_blank'
-            rel='noopener noreferrer'
+            rel='noopener noreferrer' // Added rel='noopener noreferrer'
             className='footer-link'
+            target='_blank'
           >
             SIGN UP
           </a>
           <span className='footer-link-separator'> | </span>
           <a
             href='https://app.slack.com/client/T02KCD5F37T/C02KCD5GHFT'
-            target='_blank'
-            rel='noopener noreferrer'
+            rel='noopener noreferrer' // Added rel='noopener noreferrer'
             className='footer-link'
+            target='_blank'
           >
             OUR SLACK
           </a>
@@ -90,6 +90,7 @@ function Footer() {
               className='social-icon-link facebook'
               href='https://www.facebook.com/foodatbrown/'
               target='_blank'
+              rel='noopener noreferrer' // Added rel='noopener noreferrer'
               aria-label='Facebook'
             >
               <i className='fab fa-facebook-f' />
@@ -98,6 +99,7 @@ function Footer() {
               className='social-icon-link instagram'
               href='https://www.instagram.com/frnatbrown/?igsh=MXFodm5jbjBjdHhtbg%3D%3D'
               target='_blank'
+              rel='noopener noreferrer' // Added rel='noopener noreferrer'
               aria-label='Instagram'
             >
               <i className='fab fa-instagram' />
@@ -106,6 +108,7 @@ function Footer() {
               className='social-icon-link twitter'
               href='https://x.com/FRNatBROWN'
               target='_blank'
+              rel='noopener noreferrer' // Added rel='noopener noreferrer'
               aria-label='Twitter'
             >
               <i className='fab fa-twitter' />

@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import './Header.css';
 
 function Header({ image, title }) {
@@ -8,5 +9,11 @@ function Header({ image, title }) {
     </div>
   );
 }
+
+// Prop types validation for Header component
+Header.propTypes = {
+  image: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired,
+};
 
 export default Header;
