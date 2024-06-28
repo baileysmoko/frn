@@ -37,7 +37,7 @@ function Cards() {
         </h2>
         <div className='button-container'>
         <button
-          className='btns'
+          className='btnss'
           onClick={handleButtonClick}
         >
           POUNDS TO DATE
