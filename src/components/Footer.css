@@ -57,7 +57,7 @@
   color: gray;
   text-decoration: none;
   margin: 0 8px;
-  font-size: 25px;
+  font-size: calc(1vw + 9px);
   font-family: 'Abel', sans-serif;
 }
 
