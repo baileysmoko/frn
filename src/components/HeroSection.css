@@ -43,7 +43,6 @@ video {
   font-family: 'Abel', sans-serif;
   color: #fff;
   font-size: 25px !important;
-  position: absolute;
   top: calc(40% + 65px); /* Adjust position vertically */
   left: 50%;
   transform: translate(-50%, -50%);
@@ -52,7 +51,6 @@ video {
 
 .hero-btns {
   font-family: 'Abel', sans-serif;
-  position: absolute; /* Position relative to hero-container */
   top: calc(40% + 130px); /* Adjusted margin to move buttons up */
   transform: translateY(-50%); /* Center vertically */
   z-index: 1; /* Ensure buttons are above other content */
@@ -137,7 +135,7 @@ video {
   .hero-container > h1 {
     font-family: 'Abel', sans-serif;
     font-size: 70px;
-    top: 20%; /* Adjust position for smaller screens */
+    top: 10%; /* Adjust position for smaller screens */
   }
   .hero-container > p {
     font-family: 'Abel', sans-serif;
@@ -146,7 +144,7 @@ video {
   }
   .hero-btns {
     font-family: 'Abel', sans-serif;
-    top: calc(50% + 240px); /* Adjusted position for smaller screens */
+    top: calc(50% + 220px); /* Adjusted position for smaller screens */
     flex-direction: column; /* Stack buttons vertically on smaller screens */
     align-items: center; /* Center buttons horizontally */
     margin-right: 10px;
