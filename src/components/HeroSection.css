@@ -35,6 +35,8 @@ video {
 }
 
 .hero-container h1 {
+  margin-left: 15px;
+  margin-right: 15px;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   margin-bottom: 20px;
   font-size: clamp(2.5rem, 10vw, 4rem);

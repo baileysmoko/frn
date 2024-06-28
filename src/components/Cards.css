@@ -7,14 +7,14 @@
   display: flex;
   flex-flow: column;
   align-items: center;
-  max-width: 1053px;
-  width: 90%;
+  max-width: 1220px;
+  width: 100%;
   margin: 0 auto;
 }
 
 .cards__wrapper {
   position: relative;
-  margin: 50px 0 45px;
+  margin: 30px 0 45px;
 }
 
 .cards__items {
@@ -116,7 +116,7 @@
 }
 
 .highl {
-  width: 78%;
+  width: 90%;
   margin: 0 auto;
   text-align: center;
   color:#e0a320; /* Set the color to gold */
@@ -133,13 +133,13 @@
 }
 
 .cards__image {
-  width: 85%; /* Adjust width as needed */
+  width: 100%; /* Adjust width as needed */
   height: auto; /* Maintain aspect ratio */
   margin-bottom: 0px; /* Space between the image and the cards */
 }
 
 .separator {
-  width: 78%;
+  width: 90%;
   border: none;
   border-top: 1px solid rgb(210, 210, 210); /* Gray line separator */
   margin: 60px auto;
@@ -150,14 +150,14 @@
   font-family: 'Abel', sans-serif;
   font-size: 20px;
   text-align: left; /* Adjust text alignment as needed */
-  margin-left: 12%; /* Center the description and adjust margins */
+  margin-left: 5%; /* Center the description and adjust margins */
   max-width: 750px; /* Adjust maximum width as needed */
   margin-right: 5%;
   line-height: 1.5;
 }
 .apple-image {
   float: right;
-  margin-right: 9%;
+  margin-right: 5%;
   max-width: 370px; /* Adjust the width of the apple image */
   height: auto; /* Maintain aspect ratio */
   margin-top: 0px;
@@ -170,23 +170,23 @@
 }
 
 .hlight {
-  width: 78%;
+  width: 90%;
   color: #e0a320; /* Set the color to gold */
   font-family: 'Abel', sans-serif;
   text-align: center; /* Adjust text alignment as needed */
   margin: 0 auto;
   margin-top: 40px;
-  margin-bottom: -40px;
+  margin-bottom: 0px;
   font-size: 30px;
 }
 
 .blight {
-  width: 78%;
+  width: 90%;
   margin: 0 auto;
   color: #000000; /* Set the color to gold */
   font-family: 'Abel', sans-serif;
   text-align: center; /* Adjust text alignment as needed */
-  margin-top: 70px;
+  margin-top: 30px;
   margin-bottom: 50px;
   font-size: 25px;
 }
@@ -227,7 +227,7 @@
 
 @media only screen and (max-width: 1200px) {
   .frn-description {
-    width: 85%;
+    width: 90%;
     margin: 0 auto;
     text-align: center;
   }
