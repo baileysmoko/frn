@@ -137,12 +137,12 @@ video {
   .hero-container > h1 {
     font-family: 'Abel', sans-serif;
     font-size: 70px;
-    top: 25%; /* Adjust position for smaller screens */
+    margin-top: -40px;
   }
   .hero-container > p {
     font-family: 'Abel', sans-serif;
     font-size: 20px;
-    top: 57%; /* Adjust position for smaller screens */
+    top: calc(57%+20px); /* Adjust position for smaller screens */
     text-align: center;
   }
   .hero-btns {
