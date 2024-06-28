@@ -15,7 +15,7 @@
     flex-direction: column;
     align-items: center; /* Center the events horizontally */
     margin: 0 auto; /* Center the event list container */
-    max-width: 800px; /* Optional: set a max-width to control the width of the event list */
+    max-width: 1000px; /* Optional: set a max-width to control the width of the event list */
     padding: 20px; /* Optional: add some padding */
     margin: 0 auto;
   }
@@ -30,7 +30,7 @@
   }
   
   .event-image {
-    width: 30%;
+    width: 25%;
     height: auto;
     margin-right: 20px;
   }

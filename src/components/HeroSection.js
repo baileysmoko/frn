@@ -31,7 +31,7 @@ function HeroSection() {
         >
           JOIN OUR TEAM
         </Button>
-        <p>&nbsp; &nbsp; &nbsp; </p> {/* Non-breaking space */}
+        <p>&nbsp; &nbsp; </p> {/* Non-breaking space */}
         <Button
           className='btns'
           buttonStyle='btn--outline'

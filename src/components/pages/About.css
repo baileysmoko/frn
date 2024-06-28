@@ -1,0 +1,33 @@
+.h1 {
+    font-family: 'Abel', sans-serif;
+    text-align: center;
+    font-size: 60px;
+    color: white;
+    position: "absolute", top: "9%", left: "50%", transform: "translate(-50%, -50%)"
+}
+
+.info-text {
+    font-family: 'Abel', sans-serif;
+    text-align: center;
+    font-size: 25px;
+    font-style: italic;
+    margin-top: 150px; /* Adjust as needed to position lower on the page */
+    justify-content: center;
+    margin-left: 270px;
+    margin-right: 270px;
+    margin-bottom: 150px;
+  }
+  .separator2 {
+    width: 65%;
+    border: none;
+    border-top: 1px solid rgb(210, 210, 210); /* Gray line separator */
+    margin: 60px auto;
+    margin-bottom: 10px;
+  }
+  .highlight {
+    font-family: 'Abel', sans-serif;
+    font-weight: 900;
+    margin-left: 120px;
+    margin-right: 120px;
+    color:#e0a320; /* Set the color to gold */
+  }

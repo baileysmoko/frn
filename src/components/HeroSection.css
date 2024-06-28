@@ -15,147 +15,58 @@ video {
 }
 
 .hero-container {
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-  font-family: 'Abel', sans-serif;
-  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
-  width: 100%;
-  overflow: hidden; /* Ensure no overflow */
-}
-
-.hero-container > h1 {
-  margin-left: 15px;
-  margin-right: 15px;
   text-align: center;
-  font-family: 'Abel', sans-serif;
-  color: #fff;
-  font-size: 60px !important;
-  position: absolute;
-  top: 35%;
-  z-index: 1; /* Ensure text is above the video */
+  height: 100vh;
+  position: relative;
 }
 
-.hero-container > p {
-  font-family: 'Abel', sans-serif;
-  color: #fff;
-  font-size: 25px !important;
+.hero-container video {
   position: absolute;
-  top: calc(40% + 65px); /* Adjust position vertically */
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 1; /* Ensure text is above the video */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.hero-container h1 {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  margin-bottom: 20px;
+  font-size: clamp(2.5rem, 10vw, 4rem);
+  color: #fff;
+}
+
+.hero-container p {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  margin-bottom: 20px;
+  font-size: clamp(1rem, 5vw, 2rem);
+  color: #fff;
 }
 
 .hero-btns {
-  font-family: 'Abel', sans-serif;
-  position: absolute; /* Position relative to hero-container */
-  top: calc(40% + 130px); /* Adjusted margin to move buttons up */
-  transform: translateY(-50%); /* Center vertically */
-  z-index: 1; /* Ensure buttons are above other content */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-right: 10px;
+  margin-top: 20px;
+  display: flex; /* Ensures buttons are displayed in a row */
+  justify-content: center; /* Centers the buttons horizontally */
 }
 
-.hero-btns .btns {
-  font-family: 'Abel', sans-serif;
-  color: #fff; /* Button text color */
-  margin-right: 10px; /* Adjust button spacing (top/bottom and left/right) */
-  padding: 12px 24px; /* Adjust padding for button size */
-  background-color: rgba(0, 0, 0, 0.4); /* Button background color */
-  border: none; /* Remove button border */
-  cursor: pointer; /* Add cursor pointer on hover */
-  transition: background-color 0.3s ease; /* Smooth transition on hover */
+/* Style for your buttons */
+.btns {
+  border-radius: 4px;
+  border: 1px solid #fff;
+  padding: 10px 20px;
+  margin: 0 10px;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+  text-decoration: none;
 }
 
-.hero-btns .btns:hover {
-  font-family: 'Abel', sans-serif;
-  background-color: rgba(255, 255, 255, 0.2); /* Semi-transparent background on hover */
-}
-
-@media screen and (max-width: 908px) {
-  .hero-container > h1 {
-    font-family: 'Abel', sans-serif;
-    font-size: 70px;
-    top: 25%; /* Adjust position for smaller screens */
-  }
-
-  .hero-container > p {
-    font-family: 'Abel', sans-serif;
-    font-size: 20px;
-    top: calc(45% + 30px); /* Adjust position for smaller screens */
-  }
-}
-
-@media screen and (max-width: 512px) {
-  .hero-container > p {
-    font-family: 'Abel', sans-serif;
-    font-size: 20px;
-    top: calc(57% + 30px); /* Adjust position for smaller screens */
-  }
-  .hero-btns {
-    font-family: 'Abel', sans-serif;
-    top: calc(50% + 200px); /* Adjusted position for smaller screens */
-    flex-direction: column; /* Stack buttons vertically on smaller screens */
-    align-items: center; /* Center buttons horizontally */
-    margin-right: 10px;
-  }
-
-  .hero-btns .btns {
-    font-family: 'Abel', sans-serif;
-    margin-right: 10px; /* Adjust button spacing vertically */
-    gap: 10px;
-  }
-}
-
-@media screen and (max-width: 512px) {
-  .hero-container > p {
-    font-family: 'Abel', sans-serif;
-    font-size: 20px;
-    top: calc(57% + 30px); /* Adjust position for smaller screens */
-  }
-  .hero-btns {
-    font-family: 'Abel', sans-serif;
-    top: calc(50% + 200px); /* Adjusted position for smaller screens */
-    flex-direction: column; /* Stack buttons vertically on smaller screens */
-    align-items: center; /* Center buttons horizontally */
-    margin-right: 10px;
-  }
-
-  .hero-btns .btns {
-    font-family: 'Abel', sans-serif;
-    margin-right: 10px; /* Adjust button spacing vertically */
-    gap: 10px;
-  }
-}
-@media screen and (max-width: 400px) {
-  .hero-container > h1 {
-    font-family: 'Abel', sans-serif;
-    font-size: 70px;
-    margin-top: -40px;
-  }
-  .hero-container > p {
-    font-family: 'Abel', sans-serif;
-    font-size: 20px;
-    top: calc(57%+20px); /* Adjust position for smaller screens */
-    text-align: center;
-  }
-  .hero-btns {
-    font-family: 'Abel', sans-serif;
-    top: calc(50% + 210px); /* Adjusted position for smaller screens */
-    flex-direction: column; /* Stack buttons vertically on smaller screens */
-    align-items: center; /* Center buttons horizontally */
-    margin-right: 10px;
-  }
-
-  .hero-btns .btns {
-    font-family: 'Abel', sans-serif;
-    margin-right: 10px; /* Adjust button spacing vertically */
-    gap: 10px;
-  }
+.btns:hover {
+  background: #fff;
+  color: #000;
 }
