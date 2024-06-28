@@ -25,7 +25,7 @@
 
 .footer-subscription-heading {
   margin-bottom: 24px;
-  font-size: 24px;
+  font-size: 26px;
 }
 
 .footer-input {
@@ -57,7 +57,7 @@
   color: gray;
   text-decoration: none;
   margin: 0 8px;
-  font-size: calc(1vw + 9px);
+  font-size: calc(1.5vw + 4px);
   font-family: 'Abel', sans-serif;
 }
 
