@@ -140,7 +140,8 @@ video {
   .hero-container > p {
     font-family: 'Abel', sans-serif;
     font-size: 16px;
-    top: calc(57% + 60px); /* Adjust position for smaller screens */
+    top: calc(57% + 10px); /* Adjust position for smaller screens */
+    left: 50%;
   }
   .hero-btns {
     font-family: 'Abel', sans-serif;
