@@ -134,14 +134,19 @@ video {
   }
 }
 @media screen and (max-width: 400px) {
+  .hero-container > h1 {
+    font-family: 'Abel', sans-serif;
+    font-size: 70px;
+    top: 20%; /* Adjust position for smaller screens */
+  }
   .hero-container > p {
     font-family: 'Abel', sans-serif;
-    font-size: 20px;
+    font-size: 16px;
     top: calc(57% + 60px); /* Adjust position for smaller screens */
   }
   .hero-btns {
     font-family: 'Abel', sans-serif;
-    top: calc(50% + 260px); /* Adjusted position for smaller screens */
+    top: calc(50% + 240px); /* Adjusted position for smaller screens */
     flex-direction: column; /* Stack buttons vertically on smaller screens */
     align-items: center; /* Center buttons horizontally */
     margin-right: 10px;
