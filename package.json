@@ -21,8 +21,7 @@
   },
   "eslintConfig": {
     "extends": [
-      "react-app",
-      "plugin:your-custom-config/recommended"
+      "react-app"
     ],
     "rules": {
       "no-console": "off",
