@@ -111,7 +111,7 @@ function About() {
               <Fade duration={fade_duration}>
                 <h4 className="about-media-heading">Alex Zeng</h4>
                 <p>
-                  I’m a senior at Brown from Dallas, Texas, studying biochemistry and archaeology.
+                  Hi! I’m Alex, and I am a senior at Brown studying Biochemistry and Archaeology and the Ancient World. I grew up in a family that composted all of our scraps for our vegetable garden, so joining FRN@Brown has helped me to continue saving food away from home. I’ve been with FRN for over two years now, and I’m excited to see how far we can go to divert edible food from our dining halls to better serve our local communities. 
                 </p>
               </Fade>
             </div>
@@ -214,9 +214,7 @@ function About() {
               </Fade>
             </div>
           </div>
-        </div>
 
-        <div className="about-media-container">
           <div class="about-media">
             <div class="about-media-logo">
               <Fade duration={fade_duration}>
@@ -236,9 +234,7 @@ function About() {
               </Fade>
             </div>
           </div>
-        </div>
 
-        <div className="about-media-container">
           <div class="about-media">
             <div class="about-media-logo">
               <Fade duration={fade_duration}>
@@ -258,9 +254,7 @@ function About() {
               </Fade>
             </div>
           </div>
-        </div>
 
-        <div className="about-media-container">
           <div class="about-media">
             <div class="about-media-logo">
               <Fade duration={fade_duration}>
@@ -280,11 +274,9 @@ function About() {
               </Fade>
             </div>
           </div>
-        </div>
 
-        <div className="about-media-container">
           <div class="about-media">
-            <div class="about-media-headshot">
+            <div class="about-media-logo">
               <Fade duration={fade_duration}>
                 <img src={st_stephens} alt="St. Stephen's logo"/>
               </Fade>
@@ -302,6 +294,7 @@ function About() {
               </Fade>
             </div>
           </div>
+
         </div>
 
       </div>

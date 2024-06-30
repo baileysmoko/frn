@@ -77,88 +77,137 @@ p {
   padding: 50px;
 }
 
-@media (min-width: 500px) {
+/* media rules */
+
+.about-media-container {
+  margin: 0 15%;
+  justify-content: center;
+}
+
+.about-media {
+  display: grid;
+  grid-template-columns: fit-content(30%) 1fr;
+  grid-template-rows:1fr auto;
+  grid-template-areas:
+    "image content"
+    "image footer";
+  grid-gap: 10px;
+  margin-bottom: 3em;
+}
+
+.about-media-flip {
+  grid-template-columns: 1fr fit-content(30%);
+  grid-template-areas:
+    "content image"
+    "footer image";
+}
+
+/* .about-media-headshot {
+  grid-area: image;
+} */
+
+.about-media-headshot img {
+  grid-area: image;
+  height: auto; 
+  border-radius: 3%;
+  object-fit: cover; /* Ensure the image covers the area if necessary */
+  max-width: 100%; /* Ensure the image fits within its container */
+}
+
+/* not workign for sunrise and st stephens */
+.about-media-logo img {
+  grid-area: image;
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 3%;
+  object-fit: fill; /* Ensure the image expands to fill the area if necessary */
+  max-width: 100%;
+}
+
+.about-media-content {
+  grid-area: content;
+  padding-right: 5%;
+  padding-left: 5%;
+  font-size: 21px;
+  line-height: 1.5;
+  align-self: center;
+}
+
+.about-media-content-flip {
+  padding-right: 5%;
+  padding-left: 5%;
+}
+
+.about-media-heading {
+  font-size: 27px;
+  font-weight: 900;
+  padding-bottom: 3%;
+}
+
+/* fix this :( */
+.about-media-heading a { 
+  font-size: 27px;
+  font-weight: 900;
+  padding-bottom: 3%;
+}
+
+/* .about-footer {
+  grid-area: footer;
+} */
+
+@media only screen and (max-width: 768px) {
   .about-media-container {
-    margin: 0 15%;
+    margin: 0 10%;
+    justify-content: center;
   }
+
   .about-media {
-    display: grid;
-    grid-template-columns: fit-content(30%) 1fr;
-    grid-template-rows:1fr auto;
-    grid-template-areas:
-      "image content"
-      "image footer";
-    grid-gap: 10px;
+    display: flex;
+    flex-direction: column;
     margin-bottom: 3em;
+    align-items: center;
   }
 
-  .about-media-flip {
-    grid-template-columns: 1fr fit-content(30%);
-    grid-template-areas:
-      "content image"
-      "footer image";
+  .about-media-headshot {
+    width: 50%;
   }
-
-  /* .about-media-headshot {
-    grid-area: image;
-  } */
 
   .about-media-headshot img {
-    grid-area: image;
-    height: auto; /* Maintain aspect ratio */
+    height: auto; 
     border-radius: 3%;
-    object-fit: cover; /* Ensure the image covers the area if necessary */
-    max-width: 100%; /* Ensure the image fits within its container */
   }
 
   .about-media-logo {
-    grid-area: image;
-    width: 100%; /* Ensure the container takes full width */
-    height: auto; /* Ensure the container maintains aspect ratio */
+    width: 50%;
   }
 
-  /* Why is this not working wtf */
+  /* not workign for sunrise and st stephens */
   .about-media-logo img {
     grid-area: image;
-    width: 70%;
-    height: 70%;
     height: auto; /* Maintain aspect ratio */
     border-radius: 3%;
-    object-fit: fill; /* Ensure the image covers the area if necessary */
+    object-fit: fill; /* Ensure the image expands to fill the area if necessary */
+    max-width: 100%;
   }
 
   .about-media-content {
     grid-area: content;
     padding-right: 5%;
     padding-left: 5%;
-    font-size: 21px;
+    font-size: 20px;
     line-height: 1.5;
     align-self: center;
-  }
-
-  .about-media-content-flip {
-    padding-right: 5%;
-    padding-left: 5%;
+    text-align: center;
   }
 
   .about-media-heading {
-    font-size: 27px;
+    text-align: center;
+    font-size: 24px;
     font-weight: 900;
     padding-bottom: 3%;
   }
-
-  /* fix this :( */
-  .about-media-heading a { 
-    font-size: 27px;
-    font-weight: 900;
-    padding-bottom: 3%;
-  }
-
-  .about-footer {
-    grid-area: footer;
-  }
-
+  
 }
+  
 
 
 /* || Contact */
