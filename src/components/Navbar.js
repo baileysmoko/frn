@@ -24,47 +24,49 @@ function Navbar() {
 
   return (
     <>
-      <nav className={visible ? 'navbar' : 'navbar hidden'} style={{ backgroundColor: 'white' }}>
+      <nav className={visible ? 'navbar' : 'navbar hidden'}>
         <div className='navbar-container'>
           <Link to='/' className='navbar-logo' onClick={closeMobileMenu}>
-            <img src={logo} alt='Logo' className='navbar-logo-img' style={{ width: '140px', height: 'auto'}} />
+            <img src={logo} alt='Logo' />
           </Link>
-          </div>
-          <div className='menu-icon' onClick={handleClick}>
-            <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
-          </div>
-          <ul className={click ? 'nav-menu active' : 'nav-menu'}>
-            <li className='nav-item'>
-              <Link to='/about' className='nav-links' onClick={closeMobileMenu}>
-                About
-              </Link>
-            </li>
-            <li className='nav-item'>
-              <Link to='/Involved' className='nav-links' onClick={closeMobileMenu}>
-                Get Involved
-              </Link>
-            </li>
-            <li className='nav-item'>
-              <Link to='/Events' className='nav-links' onClick={closeMobileMenu}>
-                News and Events
-              </Link>
-            </li>
-            <li className='nav-item'>
-              <a href="https://docs.google.com/forms/d/e/1FAIpQLScBrPF6CzX7IMW7iMPVf5_I4_p8HPEfc0yHI1wGVlNYLw6F_A/viewform" className='nav-links' target="_blank" rel="noopener noreferrer" onClick={closeMobileMenu}>
-                Donate
-              </a>
-            </li>
-            <li className='nav-item'>
-              <Link to='/contact' className='nav-links' onClick={closeMobileMenu}>
-                Contact Us
-              </Link>
-            </li>
-            <li className='nav-item'>
-              <a href="https://www.foodrecoverynetwork.org/" className='nav-links' target="_blank" rel="noopener noreferrer" onClick={closeMobileMenu}>
-                FRN National Website
-              </a>
-            </li>
-          </ul>
+        </div>
+
+        <div className='menu-icon' onClick={handleClick}>
+          <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
+        </div>
+        
+        <ul className={click ? 'nav-menu active' : 'nav-menu'}>
+          <li className='nav-item'>
+            <Link to='/about' className='nav-links' onClick={closeMobileMenu}>
+              About
+            </Link>
+          </li>
+          <li className='nav-item'>
+            <Link to='/Involved' className='nav-links' onClick={closeMobileMenu}>
+              Get Involved
+            </Link>
+          </li>
+          <li className='nav-item'>
+            <Link to='/Events' className='nav-links' onClick={closeMobileMenu}>
+              News & Events
+            </Link>
+          </li>
+          <li className='nav-item'>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLScBrPF6CzX7IMW7iMPVf5_I4_p8HPEfc0yHI1wGVlNYLw6F_A/viewform" className='nav-links' target="_blank" rel="noopener noreferrer" onClick={closeMobileMenu}>
+              Donate
+            </a>
+          </li>
+          <li className='nav-item'>
+            <Link to='/contact' className='nav-links' onClick={closeMobileMenu}>
+              Contact Us
+            </Link>
+          </li>
+          <li className='nav-item'>
+            <a href="https://www.foodrecoverynetwork.org/" className='nav-links' target="_blank" rel="noopener noreferrer" onClick={closeMobileMenu}>
+              FRN National
+            </a>
+          </li>
+        </ul>
       </nav>
     </>
   );

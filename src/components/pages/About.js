@@ -14,7 +14,7 @@ import ran from './Images/Ran.png';
 import bailey from './Images/Bailey.png';
 
 // Partner Photos
-import PRM from './Images/PRM_logo.png';
+import PRM from './Images/Prov_rescue_logo.png';
 import elisha from './Images/Elisha_logo.png';
 import sunrise from './Images/SunRise_logo.png';
 import BMS from './Images/BMS_logo.png';
