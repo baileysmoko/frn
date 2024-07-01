@@ -179,6 +179,7 @@
     padding-bottom: 14vh;
     transition: 
       opacity 0.5s ease;
+    position: fixed;
   }
 
   .nav-links {
