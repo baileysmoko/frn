@@ -144,16 +144,18 @@
   }
 
   .navbar {
-    height: 80px; /* You can adjust the height as needed */
+    height: 8vh; /* You can adjust the height as needed */
   }
 
   .navbar-logo {
-    margin-left: 20px;
+    margin-top: 1vh;
+    margin-left: 2vh;
     margin-right: 30px;
   }
 
   .navbar-logo img {
-    width: 60px;
+    width: 7vh;
+    max-width: 60px;
     height: auto;
   }
 
@@ -174,7 +176,7 @@
     left: 0vw;
     opacity: 1;
     z-index: 1;
-    padding-bottom: 15vh;
+    padding-bottom: 14vh;
     transition: 
       opacity 0.5s ease;
   }
@@ -201,7 +203,7 @@
     top: 0;
     right: 0;
     transform: translate(-100%, 60%);
-    font-size: 1.8rem;
+    font-size: 3vh;
     cursor: pointer;
   }
 
